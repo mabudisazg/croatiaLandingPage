@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>LandingPage</title>
+</head>
+<body>
+
+    <section>
+
+        <!-- Izbornik -->
+
+        <nav>
+            <div class="logo">
+                    <a href="index.html">
+                        <img src="./slikeLandingPage/croatiaLogo.png" alt="">
+                    </a>
+            </div>
+            
+            <ul class="nav-elementi">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="prva-crta"></div>
+                <div class="druga-crta"></div>
+            </div>
+        
+        </nav>
+
+        <!-- Kraj izbornika-->
+
+        <!-- Pocetna slika preko cijelog ekrana, parallax efekt !-->
+
+        <div class="pocetna">
+            <button class="button-pocetna">Explore!</button>
+            
+            <img src="./slikeLandingPage/plaža.jpeg" class="plaza" alt="">
+            <img src="./slikeLandingPage/bird1.png" class="bird2" alt="">
+            <img src="./slikeLandingPage/bird2.png" class="bird1" alt="">
+            
+        </div>
+        <div class="dobrodosli">
+            <h2 class="pozdrav">Dobrodošli</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sint saepe, incidunt esse doloribus cupiditate eum quasi, provident commodi ab placeat neque nihil pariatur sit nostrum! Saepe deleniti voluptatum iste.</p>
+        </div>
+
+        <!-- Područje sa prikazanim gradovima,pomoću grid sustava-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./slikeLandingPage/pula.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="tekst col-md-6">
+                    <h4>Pula</h4>
+                    <button class="btn btn-primary btnPula">Find out weather and temperature!</button>
+                    <div class="prikaz"></div>
+                </div>
+                <div class="tekst col-md-6">
+                    <h4>Zagreb</h4>
+                    <button class="btn btn-primary btnZagreb">Find out weather and temperature!</button>
+                    <div class="prikaz1"></div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./slikeLandingPage/zagreb.jpeg" class="img-fluid" alt="">
+                </div>
+                
+            </div>
+            <button class="scrollToTopBtn">☝️</button>
+        </div>
+
+        <!-- Zavrsetak podrucja sa gradovima-->
+
+        <!-- Footer-->
+
+    </section> 
+    
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="config.js"></script>
+    <script src="./parallax.js"></script>
+    <script src="./weatherAPI.js"></script>
+    <script src="scrollToTopBtn.js"></script>
+</body>
+</html>
